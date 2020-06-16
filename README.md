@@ -11,5 +11,8 @@ If  you wanna contribute a implementation Prims algorithm then branch name shoul
 
 3) You can give suggestion in issue section to make the repository better.
 
+4) Don't add any solution of Problems in the repository only algorithm/data sructure implementation will be accepted.
+You can provide program templates.Such as-  Removing duplicates from a list or Counting frequency of numbers in list. 
+
 
 
