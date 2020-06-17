@@ -1,19 +1,21 @@
 #https://www.educative.io/edpresso/how-to-implement-depth-first-search-in-python#:~:text=Depth-first%20search%20(DFS),structures%20like%20dictionaries%20and%20sets.
 
 # Using a Python dictionary to act as an adjacency list
-graph = {
-    'A' : ['B','C'],
-    'B' : ['D', 'E'],
-    'C' : ['F'],
-    'D' : [],
-    'E' : ['F'],
-    'F' : []
-}
-
-visited ={} # dictionary to keep track of visited nodes.
+from collections import defaultdict
 WHITE=1
 GREY=2
 BLACK=3
+
+
+
+#initializing a default dictionary with list
+graph=defaultdict(list) 
+
+ # dictionary to keep track of visited nodes.
+visited =defaultdict(lambda: WHITE)
+
+
+
 
 def dfs(visited, graph, node):
     
@@ -25,15 +27,12 @@ def dfs(visited, graph, node):
      
     visited[node]=BLACK
 
+
+node,edge=input().split()
+starting_node=input()
+
+for i in range(int(edge)):
+    a,b= input().split()
+    graph[a].append(b)
 # Driver Code
-
-visited['A']=WHITE
-visited['B']=WHITE
-visited['C']=WHITE
-visited['D']=WHITE
-visited['E']=WHITE
-visited['F']=WHITE
-
-
-print(visited)
-dfs(visited, graph, 'A')
+dfs(visited, graph, starting_node)
