@@ -13,6 +13,7 @@ If  you wanna contribute a implementation Prims algorithm then branch name shoul
 
 4) Don't add any solution of Problems in the repository only algorithm/data sructure implementation will be accepted.
 You can provide program templates.Such as-  Removing duplicates from a list or Counting frequency of numbers in list. 
+Any modified template of algorithms will also be allowed. Such as - Finding Shortest Path using BFS/DFS , Find the node that is unreachable from the source using Dijkstra/BFS/DFS etc . So this kind of implementation will be allowed.
 
 
 
