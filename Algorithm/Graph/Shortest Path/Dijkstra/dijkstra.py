@@ -34,13 +34,13 @@ def init(n):
      
 
 def dijkstra(source):
-     bisect.insort(priority_queue,(source,0))       # 0 denotes the distance between source to source
+     bisect.insort(priority_queue,(0,source))       # 0 denotes the distance between source to source
      dist[source]=0
 
      while len(priority_queue)!=0:
           #pop last item from the list
           pair= priority_queue.pop()
-          u=pair[0]
+          u=pair[1]
           visited[u]=1
           #print(pair)
           for neighbour in graph[u]:
@@ -48,7 +48,7 @@ def dijkstra(source):
                weight=neighbour[1]
                if(visited[v]==0 and dist[v]>dist[u]+weight):
                     dist[v]=dist[u]+weight
-                    bisect.insort(priority_queue,(v,dist[v])) 
+                    bisect.insort(priority_queue,(dist[v],v)) 
                     parent[v]=u
 
      costCalculation(source)
