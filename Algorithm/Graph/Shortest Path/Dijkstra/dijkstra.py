@@ -5,13 +5,11 @@ import bisect
 # startingNode--> (destinationNode,weight)
 
 graph = {
-     1 : [(2,3)],
-     2 : [(3,4),(4,6),(7,1)],
-     3 : [(1,9)],
-     4 : [(5,11)],
-     5 : [(6,14)],
-     6 : [(7,5)],
-     7 : [(5,8)]
+     1 : [(2,24),(4,20),(3,3)],
+     2 : [(1,24)],
+     3 : [(1,3),(4,12)],
+     4 : [(3,12),(1,20)]
+    
 }
 
 INF=1000000
@@ -19,8 +17,8 @@ priority_queue=[]
 visited=[]
 dist=[]
 parent=[]
-node=7
-edge=9
+node=4
+edge=4
 
 def init(n):
      for i in range(n+1):
@@ -34,18 +32,22 @@ def init(n):
      
 
 def dijkstra(source):
-     bisect.insort(priority_queue,(0,source))       # 0 denotes the distance between source to source
+
+     # 0 denotes the cost of source node
+     bisect.insort(priority_queue,(0,source))       
      dist[source]=0
 
      while len(priority_queue)!=0:
-          #pop last item from the list
-          pair= priority_queue.pop()
+          #pop first item from the list
+          pair= priority_queue.pop(0)
           u=pair[1]
           visited[u]=1
           #print(pair)
           for neighbour in graph[u]:
                v=neighbour[0]
                weight=neighbour[1]
+
+               print(str((u,v))+"-- "+str(dist[u])+"+"+str(weight)+"<"+str(dist[v]))
                if(visited[v]==0 and dist[v]>dist[u]+weight):
                     dist[v]=dist[u]+weight
                     bisect.insort(priority_queue,(dist[v],v)) 
