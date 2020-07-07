@@ -4,9 +4,7 @@ This repository will have many algorithm implementation in python , simulation a
 # Rules:
 
 1) Anyone can provide any algorithm or data structure implementation.
-If you wanna provide a implementation,then create another branch and commit in that branch.
-branch name should be the name of area of implementation and  the commit message should be something related to the program name.For example-
-If  you wanna contribute a implementation Prims algorithm then branch name should be algorithm or graph algorithm. And the commit message should be something like Prims algo added/prims algo modified.
+If you want to contribute,firstly you have to fork the repository.Work on that repository then send pull request.Please give a reference that which problem you solved ,which algorithm you implemented or what modifications you have done.
 
 2) If you want a implementation or any kind help or any questions then you can write that in the issue section.
 
