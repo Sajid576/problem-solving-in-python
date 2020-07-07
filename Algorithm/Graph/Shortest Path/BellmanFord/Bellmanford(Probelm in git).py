@@ -1,10 +1,90 @@
-'''
-1) Finding the number of negative cycle
-2) Find which negative cycle node is included in which negative cycle?
-'''
-# ( startingNode,destinationNode,weight)
 from collections import defaultdict
-graph=[(1,2,1),(2,1,-2),(2,5,8),(5,3,7),(5,4,-8),(4,6,10),(6,5,2),(4,7,8),
+import numpy as np
+components=defaultdict(list)
+def SCC():
+    graph = {
+     1 : [2],
+     2 : [1,5],
+     5 : [3,4],
+     3 : [],
+     4 : [6,7],
+     
+     6 : [5],
+     7 : [8],
+     8 : [9],
+     9 : [7]
+    }
+    transpose_graph = {
+        1 : [2],
+        2 : [1],
+        3 : [5],
+        4 : [5],
+        5 : [2,6],
+        6 : [4],
+        7 : [4,9],
+        8 : [7],
+        9 : [8],
+    } 
+
+    visited ={} # dictionary to keep track of visited nodes.
+    result=[]   # result stack to push the result
+    WHITE=1
+    GREY=2
+    BLACK=3
+    
+
+    def dfs(visited, graph, node): 
+        visited[node]=GREY    
+        for neighbour in graph[node]:
+            if visited[neighbour]==WHITE:
+                dfs(visited, graph, neighbour)
+    
+        visited[node]=BLACK
+        #pushing to the result stack 
+        result.append(node)
+
+
+    def next_dfs(visited, graph, node,mark):
+        
+        components[mark].append(node)
+        visited[node]=GREY    
+        for neighbour in graph[node]:
+            if visited[neighbour]==WHITE:
+                next_dfs(visited, graph, neighbour,mark)
+         
+# Driver Code
+    for i in range(1,10):
+        visited[i]=WHITE
+    
+    print(visited)
+    for i in range(1,10):
+        if(visited[i]==WHITE):
+            dfs(visited, graph, i)
+    
+    
+    mark=0
+    for i in range(1,10):
+        visited[i]=WHITE
+
+
+    while len(result)!=0:
+        u=result.pop()
+        if( visited[u]==WHITE):
+            mark=mark+1
+            next_dfs(visited,transpose_graph,u,mark)
+    
+    numberOfcycles=0
+    print("Number of components:  "+str(mark))
+    for key, value in components.items():
+        Size=len(components[key])
+        if(Size>=2):
+            numberOfcycles+=1
+        print(components[key])
+        
+    print("Number of cycle is:  "+str(numberOfcycles))
+
+
+graph1=[(1,2,1),(2,1,-2),(2,5,8),(5,3,7),(5,4,-8),(4,6,10),(6,5,2),(4,7,8),
         (7,8,-2),(8,9,1),(9,7,-3)  ]
 
 INF = 1000000
@@ -32,9 +112,9 @@ def bellManFord(source):
     for i in range(node):
         ck = True
         for j in range(edge):
-            u = graph[j][0]
-            v = graph[j][1]
-            w = graph[j][2]
+            u = graph1[j][0]
+            v = graph1[j][1]
+            w = graph1[j][2]
             if (dist[v] > dist[u] + w):
                 dist[v] = dist[u] + w
                 parent[v] = u
@@ -46,41 +126,43 @@ def bellManFord(source):
         for i in range(8):
             dist[i] = 10000
         for j in range(edge):
-            u = graph[j][0]
-            v = graph[j][1]
-            w = graph[j][2]
+            u = graph1[j][0]
+            v = graph1[j][1]
+            w = graph1[j][2]
             if (dist[v] > dist[u] + w):
                 dist[v] = dist[u] + w
                 parent[v] = u
         print("negative cycle found")
-        print(graph)
+        print(graph1)
         negative_cycle_node = []
         #dist = [INF] * n
-        noOfcycle = 0
-        noOfcomponent =1 
-        component=defaultdict(list) #track with which nodes they are making cycle simalar as scc
+        
         for j in range(edge):
-            u = graph[j][0]
-            v = graph[j][1]
-            w = graph[j][2]
+            u = graph1[j][0]
+            v = graph1[j][1]
+            w = graph1[j][2]
             if (visited[u] == 0 and (dist[v] > dist[u] + w)):
                 dist[v] = dist[u] + w
                 print(str(u) + "->" + str(v))
-                component[noOfcomponent].append(u)
                 negative_cycle_node.append(u)
                 visited[u] = 1
-                if v in negative_cycle_node:
-                    noOfcycle=noOfcycle+1
-                    noOfcomponent=noOfcomponent+1
+                
         print(negative_cycle_node)
-        print('Number of negative cylce: ',noOfcycle)
-        print(component)
         
-        node_query=int(input())
-
-        for x,y in component.items():
+         
+        noOfnegativecycle = 0
+        print('Number of negative cycle are :')
+        for x,y in components.items():
+            if y[0] in negative_cycle_node:
+                noOfnegativecycle=noOfnegativecycle+1
+                print(components[x])
+             
+        print('no of negative cycle',noOfnegativecycle)   
+        node_query=int(input('enter a node to see which cycle it belongs '))
+        
+        for x,y in components.items():
             if node_query in y:
-                print('this node is a cycle with',component[x])
+                print('this node is a cycle with',components[x])
             
 def shortestPath(i):
     if (parent[i] == -1):
@@ -101,5 +183,6 @@ def costCalculation(source):
 
 
 # driver code
+SCC()
 init(node)
 bellManFord(1)
