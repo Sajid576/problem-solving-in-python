@@ -35,6 +35,7 @@ def bellManFord(source):
             u = graph[j][0]
             v = graph[j][1]
             w = graph[j][2]
+            
             if (dist[v] > dist[u] + w):
                 dist[v] = dist[u] + w
                 parent[v] = u
@@ -43,8 +44,9 @@ def bellManFord(source):
         print("No negative cycle found")
         #costCalculation(source)
     else:
-        for i in range(8):
-            dist[i] = 10000
+        for i in range(1,node+1):
+            dist[i] = INF
+            
         for j in range(edge):
             u = graph[j][0]
             v = graph[j][1]

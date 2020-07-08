@@ -1,5 +1,7 @@
 from collections import defaultdict
 import numpy as np
+
+#this components list holds all the components of a graph
 components=defaultdict(list)
 def SCC():
     graph = {
@@ -51,8 +53,9 @@ def SCC():
         for neighbour in graph[node]:
             if visited[neighbour]==WHITE:
                 next_dfs(visited, graph, neighbour,mark)
-         
-# Driver Code
+
+
+# Driver Code for SCC
     for i in range(1,10):
         visited[i]=WHITE
     
@@ -121,7 +124,7 @@ def bellManFord(source):
                 ck = False
     if ck:
         print("No negative cycle found")
-        #costCalculation(source)
+        costCalculation(source)
     else:
         for i in range(8):
             dist[i] = 10000
@@ -135,7 +138,7 @@ def bellManFord(source):
         print("negative cycle found")
         print(graph1)
         negative_cycle_node = []
-        #dist = [INF] * n
+        
         
         for j in range(edge):
             u = graph1[j][0]
@@ -147,22 +150,18 @@ def bellManFord(source):
                 negative_cycle_node.append(u)
                 visited[u] = 1
                 
-        print(negative_cycle_node)
+        print("The nodes that are under neagtive cycle: "+str(negative_cycle_node))
         
          
         noOfnegativecycle = 0
-        print('Number of negative cycle are :')
+        print("The negative cycles are: ")
         for x,y in components.items():
             if y[0] in negative_cycle_node:
                 noOfnegativecycle=noOfnegativecycle+1
                 print(components[x])
              
-        print('no of negative cycle',noOfnegativecycle)   
-        node_query=int(input('enter a node to see which cycle it belongs '))
-        
-        for x,y in components.items():
-            if node_query in y:
-                print('this node is a cycle with',components[x])
+        print('no of negative cycle: ',noOfnegativecycle)   
+       
             
 def shortestPath(i):
     if (parent[i] == -1):
