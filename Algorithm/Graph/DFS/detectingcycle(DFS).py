@@ -35,6 +35,8 @@ starting_node=input()
 for i in range(int(edge)):
     a,b= input().split()
     graph[a].append(b)
+
+    
 # Driver Code
 dfs(visited, graph, starting_node)
 if flag == True:

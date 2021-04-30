@@ -152,14 +152,17 @@ def bellManFord(source):
                 
         print("The nodes that are under neagtive cycle: "+str(negative_cycle_node))
         
-         
+        
         noOfnegativecycle = 0
+        
+        """
         print("The negative cycles are: ")
         for x,y in components.items():
             if y[0] in negative_cycle_node:
                 noOfnegativecycle=noOfnegativecycle+1
                 print(components[x])
-             
+        """  
+        
         print('no of negative cycle: ',noOfnegativecycle)   
        
             
