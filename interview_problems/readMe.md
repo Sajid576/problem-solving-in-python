@@ -1,0 +1,1 @@
+This folder contains the problems that appeared on  Google ,Facebook,Uber and other top most company.
