@@ -1,0 +1,37 @@
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+.blueText {
+  color: blue;
+  text-align: center;
+}
+
+.blackText{
+    color: grey;
+    text-align: center;
+}
+
+.android{
+    background-image: url('./assets/android.png');
+}
+.ios{
+    background-image: url('./assets/ios.jpg');
+}
+
+.square {
+   
+    background: grey;
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    background: darkblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
