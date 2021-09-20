@@ -18,16 +18,16 @@ Any modified template of algorithms will also be allowed. Such as - Finding Shor
 
 ## Plans
 - Solve all the problems that Geeksforgeeks suggests for product based companies.
-[https://www.geeksforgeeks.org/must-do-coding-questions-for-product-based-companies/](Click here to See)
+[Click here](https://www.geeksforgeeks.org/must-do-coding-questions-for-product-based-companies/)
 
 - Learn about system design from Gaurav Sen.
-[https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX](Click here)
+[Click Here](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)
 
 - A good github repository to learn about System Design:
-[https://github.com/donnemartin/system-design-primer](Click here)
+[Click Here](https://github.com/donnemartin/system-design-primer)
 
 - Top interview questions in leetcode:
-[https://leetcode.com/problem-list/wpwgkgt/](Click Here)
+[Click Here](https://leetcode.com/problem-list/wpwgkgt/)
 
 
 
