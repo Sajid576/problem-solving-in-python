@@ -1,7 +1,9 @@
 # Data-Structure-Algorithms-in-Python
-This repository will have many algorithm implementation in python , simulation and some python templates.
+This repository will have many data structures and algorithm implementation in python , simulation and some python templates.
+Gradually , this repo will contain the solves from leetcode,Geekforgeeks,interviewbit as well.
+It will also contain system design resources.
 
-# Rules:
+## Rules:
 
 1) Anyone can provide any algorithm or data structure implementation.
 If you want to contribute,firstly you have to fork the repository.Work on that repository then send pull request.Please give a reference that which problem you solved ,which algorithm you implemented or what modifications you have done.
@@ -10,9 +12,26 @@ If you want to contribute,firstly you have to fork the repository.Work on that r
 
 3) You can give suggestion in issue section to make the repository better.
 
-4) Don't add any solution of Problems in the repository only algorithm/data sructure implementation will be accepted.
-You can provide program templates.Such as-  Removing duplicates from a list or Counting frequency of numbers in list. 
+4) You can provide program templates.Such as-  Removing duplicates from a list or Counting frequency of numbers in list. 
 Any modified template of algorithms will also be allowed. Such as - Finding Shortest Path using BFS/DFS , Find the node that is unreachable from the source using Dijkstra/BFS/DFS etc . So this kind of implementation will be allowed.
+
+
+## Plans
+- Solve all the problems that Geeksforgeeks suggests for product based companies.
+[https://www.geeksforgeeks.org/must-do-coding-questions-for-product-based-companies/](Click here to See)
+
+- Learn about system design from Gaurav Sen.
+[https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX](Click here)
+
+- A good github repository to learn about System Design:
+[https://github.com/donnemartin/system-design-primer](Click here)
+
+- Top interview questions in leetcode:
+[https://leetcode.com/problem-list/wpwgkgt/](Click Here)
+
+
+
+
 
 
 
