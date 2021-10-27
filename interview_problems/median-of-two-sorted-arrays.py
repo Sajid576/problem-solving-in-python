@@ -1,6 +1,6 @@
 import math
 from typing import List
-
+import myTest
 
 def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
     nums = [*nums1, *nums2]
@@ -17,4 +17,9 @@ def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
         return nums[indx]
 
 
-print(findMedianSortedArrays([2, 3], [1]))
+
+
+
+myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,2 )
+myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,3 )
+myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,4 )
