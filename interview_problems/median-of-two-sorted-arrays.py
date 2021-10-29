@@ -1,3 +1,5 @@
+'''https://leetcode.com/problems/median-of-two-sorted-arrays/'''
+
 import math
 from typing import List
 import myTest
@@ -21,5 +23,3 @@ def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
 
 
 myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,2 )
-myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,3 )
-myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,4 )
