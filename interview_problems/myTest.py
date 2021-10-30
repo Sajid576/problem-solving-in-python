@@ -5,4 +5,4 @@ def myTest(actual,expected):
         print("✅ Passed")
     except:
         failMessage = " Should be: "+str(expected)
-        print("❌" + failMessage)
+        print("❌" + failMessage,"\nGetting:",actual)

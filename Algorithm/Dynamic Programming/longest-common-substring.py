@@ -21,6 +21,7 @@ def LCSubStr(X, Y, m, n):
             else:
                 LCSuff[i][j] = 0
 
+    # backtracking to get the substring
     i=highest_length_indx[0]
     j=highest_length_indx[1]
     elem=LCSuff[i][j]
