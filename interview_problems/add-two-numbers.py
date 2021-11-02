@@ -34,6 +34,6 @@ def addTwoNumbers(l1: Optional[List], l2: Optional[List]) -> Optional[List]:
         return mylist
 
 
-myTest.myTest(addTwoNumbers([2,4,3],[5,6,4]  ),[7,0,8])
-myTest.myTest(addTwoNumbers([0],[0]  ),[0])
-myTest.myTest(addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]  ),[8,9,9,9,0,0,0,1])
+myTest.test(addTwoNumbers([2,4,3],[5,6,4]  ),[7,0,8])
+myTest.test(addTwoNumbers([0],[0]  ),[0])
+myTest.test(addTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]  ),[8,9,9,9,0,0,0,1])

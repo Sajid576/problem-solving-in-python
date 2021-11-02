@@ -1,5 +1,5 @@
 
-def myTest(actual,expected):
+def test(actual,expected):
     try:
         assert actual == expected
         print("✅ Passed")
