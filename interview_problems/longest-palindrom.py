@@ -46,8 +46,8 @@ def longestPalindrome(s: str) -> str:
         return lcs
                                
  
-myTest.myTest(longestPalindrome("babad")  ,"aba" )
-myTest.myTest(longestPalindrome("cbbd")  ,"bb" )
-myTest.myTest(longestPalindrome("ac")  ,"a" )
-myTest.myTest(longestPalindrome("a")  ,"a" )
-myTest.myTest(longestPalindrome("aacabdkacaa")  ,"aca" )
+myTest.test(longestPalindrome("babad")  ,"aba" )
+myTest.test(longestPalindrome("cbbd")  ,"bb" )
+myTest.test(longestPalindrome("ac")  ,"a" )
+myTest.test(longestPalindrome("a")  ,"a" )
+myTest.test(longestPalindrome("aacabdkacaa")  ,"aca" )

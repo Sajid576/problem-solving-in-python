@@ -22,4 +22,4 @@ def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
 
 
 
-myTest.myTest(findMedianSortedArrays([2, 3], [1])  ,2 )
+myTest.test(findMedianSortedArrays([2, 3], [1])  ,2 )
