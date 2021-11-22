@@ -1,12 +1,14 @@
+
 '''https://leetcode.com/problems/string-to-integer-atoi/'''
 from typing import List
 import myTest
 
 def isNumber(ch):
-        if(ch>='0' and ch<='9'):
-            return True
-        else:
-            return False
+    if(ch>='0' and ch<='9'):
+        return True
+    else:
+        return False
+
 
 def myAtoi( s: str) -> int:
     if(s==''):
