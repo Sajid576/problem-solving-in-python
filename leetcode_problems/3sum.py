@@ -9,7 +9,7 @@ def threeSum(nums: List[int]) -> List[List[int]]:
     if(len(nums) < 3):
         return []
 
-    result = []
+    result = set()
     nums.sort()
 
     for i, a in enumerate(nums):
@@ -22,7 +22,7 @@ def threeSum(nums: List[int]) -> List[List[int]]:
             elif(threeSum < 0):
                 l += 1
             else:
-                result.append([a, nums[l], nums[r]])
+                result.add([a, nums[l], nums[r]])
 
     return result
 
