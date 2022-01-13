@@ -2,7 +2,7 @@
 
 
 from typing import List
-import myTest
+import leetcode_problems.myTest as myTest
 
 
 def romanToInt(s: str) -> int:

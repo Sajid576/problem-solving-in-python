@@ -53,13 +53,13 @@ def myAtoi( s: str) -> int:
     
 
 
-myTest.myTest(myAtoi("0042")  ,42 )
-myTest.myTest(myAtoi("+1")  ,1 )
-myTest.myTest(myAtoi("-")  ,0 )
-myTest.myTest(myAtoi("-+12")  ,0 )
-myTest.myTest(myAtoi("42")  ,42 )
-myTest.myTest(myAtoi("       -42")  ,-42 )
-myTest.myTest(myAtoi("4193 with words")  ,4193 )
-myTest.myTest(myAtoi("words and 987")  ,0 )
-myTest.myTest(myAtoi("-91283472332")  ,-2147483648 )
-myTest.myTest(myAtoi("3.1416")  , 3 )
+myTest.test(myAtoi("0042")  ,42 )
+myTest.test(myAtoi("+1")  ,1 )
+myTest.test(myAtoi("-")  ,0 )
+myTest.test(myAtoi("-+12")  ,0 )
+myTest.test(myAtoi("42")  ,42 )
+myTest.test(myAtoi("       -42")  ,-42 )
+myTest.test(myAtoi("4193 with words")  ,4193 )
+myTest.test(myAtoi("words and 987")  ,0 )
+myTest.test(myAtoi("-91283472332")  ,-2147483648 )
+myTest.test(myAtoi("3.1416")  , 3 )
