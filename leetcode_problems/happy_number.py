@@ -1,18 +1,18 @@
 '''https://leetcode.com/problems/happy-number/'''
 from typing import List
-import myTest
+import google_problems.my_test as my_test
 
 
 def sumi(n):
-	res = 0
-	while n:
-		res += (n % 10)**2
-		n //= 10
-	return res
+    res = 0
+    while n:
+        res += (n % 10)**2
+        n //= 10
+    return res
 
 
 def isHappy(n: int) -> bool:
-	# Time and Space: O(logn), O(logn)
+    # Time and Space: O(logn), O(logn)
     res = set()
     while n != 1 and n not in res:
         res.add(n)
@@ -24,6 +24,6 @@ def isHappy(n: int) -> bool:
         return False
 
 
-myTest.test(isHappy(19), True)
+my_test.test(isHappy(19), True)
 
-myTest.test(isHappy(2), False)
+my_test.test(isHappy(2), False)

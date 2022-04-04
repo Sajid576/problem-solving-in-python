@@ -1,6 +1,6 @@
 '''https://leetcode.com/problems/3sum/'''
 
-import myTest
+import google_problems.my_test as my_test
 from typing import List
 
 
@@ -29,6 +29,6 @@ def threeSum(nums: List[int]) -> List[List[int]]:
     return result
 
 
-myTest.test(threeSum([-1, 0, 1, 2, -1, -4]), [[-1, -1, 2], [-1, 0, 1]])
-myTest.test(threeSum([]), [])
-myTest.test(threeSum([0]), [])
+my_test.test(threeSum([-1, 0, 1, 2, -1, -4]), [[-1, -1, 2], [-1, 0, 1]])
+my_test.test(threeSum([]), [])
+my_test.test(threeSum([0]), [])

@@ -2,7 +2,8 @@
 
 import math
 from typing import List
-import myTest
+import google_problems.my_test as my_test
+
 
 def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
     nums = [*nums1, *nums2]
@@ -19,7 +20,4 @@ def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
         return nums[indx]
 
 
-
-
-
-myTest.test(findMedianSortedArrays([2, 3], [1])  ,2 )
+my_test.test(findMedianSortedArrays([2, 3], [1]), 2)

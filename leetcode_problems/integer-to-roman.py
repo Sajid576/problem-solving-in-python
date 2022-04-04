@@ -2,25 +2,22 @@
 
 
 from typing import List
-import myTest
+import google_problems.my_test as my_test
+
 
 def intToRoman(num: int) -> str:
-        symbol_val_map={
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M':1000,
-        }
-
-        
+    symbol_val_map = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000,
+    }
 
 
-
-
-myTest.test()
-myTest.test()
-myTest.test()
-myTest.test()
+my_test.test()
+my_test.test()
+my_test.test()
+my_test.test()

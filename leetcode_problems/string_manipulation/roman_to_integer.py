@@ -2,7 +2,7 @@
 
 
 from typing import List
-import leetcode_problems.myTest as myTest
+import google_problems.my_test as my_test
 
 
 def romanToInt(s: str) -> int:
@@ -28,9 +28,9 @@ def romanToInt(s: str) -> int:
     return int(num)
 
 
-myTest.test(romanToInt("I"), 1)
-myTest.test(romanToInt("III"), 3)
-myTest.test(romanToInt("IV"), 4)
-myTest.test(romanToInt("IX"), 9)
-myTest.test(romanToInt("LVIII"), 58)
-myTest.test(romanToInt("MCMXCIV"), 1994)
+my_test.test(romanToInt("I"), 1)
+my_test.test(romanToInt("III"), 3)
+my_test.test(romanToInt("IV"), 4)
+my_test.test(romanToInt("IX"), 9)
+my_test.test(romanToInt("LVIII"), 58)
+my_test.test(romanToInt("MCMXCIV"), 1994)
