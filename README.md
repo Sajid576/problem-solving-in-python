@@ -27,6 +27,6 @@ It will also contain system design resources.
   [Educative Website](https://www.educative.io/courses/grokking-the-system-design-interview)
   This is the free version of this course available in five parts.
   [CourseHunters Online](https://coursehunters.online/search?q=educative)
-
+  Follow [Code Karle Channel](https://www.youtube.com/c/codeKarle/playlists)
 - A good github repository to learn about System Design:
   [Click Here](https://github.com/donnemartin/system-design-primer)
