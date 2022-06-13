@@ -16,7 +16,7 @@ It will also contain system design resources.
 4. You can provide program templates.Such as- Removing duplicates from a list or Counting frequency of numbers in list.
    Any modified template of algorithms will also be allowed. Such as - Finding Shortest Path using BFS/DFS , Find the node that is unreachable from the source using Dijkstra/BFS/DFS etc . So this kind of implementation will be allowed.
 
-## Plans
+## Resources Link
 
 - Solve 100 medium questions of big tech company problems and try to achive 45 min problem solving skill.
   [Click here](https://github.com/Sajid576/LeetCode-Questions-CompanyWise)
@@ -32,6 +32,11 @@ It will also contain system design resources.
   [Click Here](https://github.com/donnemartin/system-design-primer)
   
 - https://github.com/InterviewReady/system-design-resources
+
+*** List of 75 blind leetcode questions
+If the pattern of these 75 questions is understood then any interview can be cracked.
+- https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+
 
 ## Leetcode Patterns
 
