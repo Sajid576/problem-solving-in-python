@@ -1,5 +1,5 @@
 from typing import List
-from my_test import test
+from blind_75.heap.my_test import test
 
 
 def containsDuplicate(nums: List[int]) -> bool:

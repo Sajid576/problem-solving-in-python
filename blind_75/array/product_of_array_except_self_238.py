@@ -1,5 +1,5 @@
 from typing import List
-from my_test import test
+from blind_75.tree.my_test import test
 
 
 def productExceptSelf(nums: List[int]) -> List[int]:
