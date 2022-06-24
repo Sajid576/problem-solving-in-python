@@ -14,7 +14,6 @@ def maxDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
 
-    # Recursion计算左右子树的最大深度
     left_tree_depth = maxDepth(root.left)
     right_tree_depth = maxDepth(root.right)
 
