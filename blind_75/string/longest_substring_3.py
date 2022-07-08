@@ -2,6 +2,7 @@ from typing import List
 from my_test import test
 
 # Sliding window approach
+# https://towardsdatascience.com/leetcode-problem-3-python-3ec4ae0ae13
 
 
 def lengthOfLongestSubstring(s: str) -> int:
