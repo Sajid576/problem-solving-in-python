@@ -3,6 +3,8 @@
 import google_problems.my_test as my_test
 from typing import List
 
+# two pointer approach
+
 
 def threeSum(nums: List[int]) -> List[List[int]]:
 
@@ -17,11 +19,15 @@ def threeSum(nums: List[int]) -> List[List[int]]:
         r = len(nums)-1
         while(l < r):
             threeSum = nums[i]+nums[l]+nums[r]
+            # decrement right pointer
             if(threeSum > 0):
                 r -= 1
+            # increment left pointer
             elif(threeSum < 0):
                 l += 1
+
             else:
+                # check if the sum is duplicate
                 if([nums[i], nums[l], nums[r]] not in result):
                     result.append([nums[i], nums[l], nums[r]])
                 l += 1
