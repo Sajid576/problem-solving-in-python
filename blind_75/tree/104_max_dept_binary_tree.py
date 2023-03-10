@@ -9,6 +9,20 @@ class TreeNode:
         self.right = None
 
 
+class Tree:
+    def __init__(self):
+        self.root =None
+
+    def insert(self, val):
+        newNode = TreeNode(val)
+        if(self.root):
+            current = self.root
+            while(current.next):
+                current = current.next
+            current.next = newNode
+        else:
+            self.root = newNode
+
 def maxDepth(root: Optional[TreeNode]) -> int:
     # Termination conditions
     if not root:
