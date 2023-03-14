@@ -30,13 +30,14 @@ It will also contain system design resources.
   Follow [Code Karle Channel](https://www.youtube.com/c/codeKarle/playlists)
 - A good github repository to learn about System Design:
   [Click Here](https://github.com/donnemartin/system-design-primer)
-  
 - https://github.com/InterviewReady/system-design-resources
 
-*** List of 75 blind leetcode questions
-If the pattern of these 75 questions is understood then any interview can be cracked.
-- https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+- https://github.com/Sajid576/LLD
 
+\*\*\* List of 75 blind leetcode questions
+If the pattern of these 75 questions is understood then any interview can be cracked.
+
+- https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
 
 ## Leetcode Patterns
 
