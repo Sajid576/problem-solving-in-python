@@ -24,7 +24,6 @@ print(L)
 # [('Alex', 5), ('Bob', 20), ('Alice', 25)]
 
 #Sorting a list of objects
-
 class User:
     def __init__(self, name, age):
         self.name = name
@@ -33,19 +32,19 @@ class User:
 L=[]
 L.append(User('sajid',20))
 L.append(User('jabed',25))
-L.append(User('bristy',22))
+L.append(User('saif',22))
 
 # Sorting in lexicographic order by 'name' field
 L.sort(key=lambda x: x.name)
 print([item.name for item in L])
-# output: ['bristy', 'jabed', 'sajid']
+# output: ['saif', 'jabed', 'sajid']
 
 #Sorting in ascending order by 'age' field
 L.sort(key=lambda x: x.age)
 print([item.name for item in L])
-# output: ['sajid', 'bristy', 'jabed']
+# output: ['sajid', 'saif', 'jabed']
 
 #Sorting in descending order by 'age' field
 L.sort(key=lambda x: x.age,reverse=True)
 print([item.name for item in L])
-# output: ['jabed', 'bristy', 'sajid']
+# output: ['jabed', 'saif', 'sajid']
