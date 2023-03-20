@@ -86,4 +86,6 @@ If asked for common strings then
 - Map
 - Trie
 
+If problem needs to be solved using greedy, then use sort
+
 Else - Map/Set for O(1) time & O(n) space - Sort input for O(nlogn) time and O(1) space
