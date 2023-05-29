@@ -6,8 +6,10 @@ def insert( intervals: List[List[int]], newInterval: List[int]) -> List[List[int
 
 
     for i in range(len(intervals)):
+        # add non-overlapping intervals before new_interval to res
         if(intervals[i][1] < newInterval[0]):
             result.append(intervals[i])
+        
         elif(intervals[i][0] > newInterval[1]):
             result.append(newInterval)
             return result + intervals[i:]
