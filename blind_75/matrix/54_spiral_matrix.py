@@ -1,9 +1,7 @@
 from typing import List
 
 def spiralOrder(matrix: List[List[int]]) -> List[int]:
-    if not matrix:
-      return []
-
+    
     m = len(matrix)
     n = len(matrix[0])
     ans = []
