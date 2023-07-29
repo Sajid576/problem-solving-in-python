@@ -1,16 +1,20 @@
 from typing import List
 
 def rotate( matrix: List[List[int]]) -> None:
-    n = len(matrix)
 
-    for i in range(0,n):
-        j=n-1
-        while(j>0):
-            temp = matrix[i][j]
-            matrix[i][j] = matrix[j][i]
-            matrix[j][i] = temp
-            j-=1
+    # transpose the matrix
+    # reverse every row
+
+    for r in range(len(matrix)):
+        for c in range(r):
+            matrix[r][c], matrix[c][r] = matrix[c][r], matrix[r][c]
+                
         
+    for r in range(len(matrix)):
+            matrix[r].reverse()
+            
+        
+        return matrix
             
             
     
